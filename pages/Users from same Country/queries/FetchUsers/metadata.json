@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT id, gender, name, email FROM public.\"users\"\nLIMIT 10;",
+      "body": "SELECT id, gender, name , email, country FROM public.\"users\"\nLIMIT 10;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

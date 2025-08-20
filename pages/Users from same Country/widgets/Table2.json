@@ -36,7 +36,7 @@
     "name",
     "email"
   ],
-  "columnUpdatedAt": 1755677947874,
+  "columnUpdatedAt": 1755679443998,
   "columnWidthMap": {},
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -74,7 +74,11 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
@@ -96,8 +100,9 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 11,
   "needsErrorInfo": false,
-  "originalBottomRow": 65,
-  "originalTopRow": 17,
+  "onRowSelected": "{{CountrySelection.fetchDataUsingCountries();}}",
+  "originalBottomRow": 64,
+  "originalTopRow": 16,
   "parentColumnSpace": 15.171875,
   "parentId": "0",
   "parentRowSpace": 10,

@@ -7,9 +7,6 @@
       "key": "truncateButtonColor"
     },
     {
-      "key": "fontFamily"
-    },
-    {
       "key": "borderRadius"
     },
     {
@@ -18,7 +15,7 @@
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontFamily": "Open Sans",
   "fontSize": "1rem",
   "fontStyle": "BOLD",
   "isLoading": false,
@@ -33,7 +30,7 @@
   "mobileRightColumn": 7,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "originalBottomRow": 7,
+  "originalBottomRow": 6,
   "originalTopRow": 2,
   "overflow": "NONE",
   "parentColumnSpace": 15.171875,
@@ -45,7 +42,7 @@
   "shouldTruncate": false,
   "text": "Selected user is from {{FindCountry.data[0].country}}",
   "textAlign": "LEFT",
-  "textColor": "#ef4444",
+  "textColor": "#7e22ce",
   "topRow": 2,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

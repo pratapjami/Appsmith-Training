@@ -1,2 +1,2 @@
-SELECT id, gender, name, email FROM public."users"
+SELECT id, gender, name , email, country FROM public."users"
 LIMIT 10;
