@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68a3276fd0b8bb03282a0ce8_f75fc99f-ae18-4769-9d78-5c9d7a605408",
-  "id": "Page1_CreateUser",
+  "gitSyncId": "68a5783ffcb2454bc950e560_7185591d-02e0-4d1e-87d2-6bd5eead9e6d",
+  "id": "Users from same Country_GetGenders",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.\"users\" (\"gender\", \"email\", \"name\")\n  VALUES ('{{CreateUserForm.formData.gender}}', '{{CreateUserForm.formData.email}}', '{{CreateUserForm.formData.name}}');",
+      "body": "SELECT DISTINCT(gender) FROM public.\"users\" WHERE gender <> '';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,13 +22,9 @@
       "name": "Pratap-DataSource",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "name": "CreateUser",
-    "pageId": "Page1",
+    "dynamicBindingPathList": [],
+    "name": "GetGenders",
+    "pageId": "Users from same Country",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

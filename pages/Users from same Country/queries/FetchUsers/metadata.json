@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68a3276fd0b8bb03282a0ce8_55765a09-ab08-4190-9a2a-5c60961e25c0",
-  "id": "Page1_GetGenders",
+  "gitSyncId": "68a5783ffcb2454bc950e560_c1b364eb-fb6b-4206-ba53-7d504b94ddf6",
+  "id": "Users from same Country_FetchUsers",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT(gender) FROM public.\"users\" WHERE gender <> '';",
+      "body": "SELECT id, gender, name, email FROM public.\"users\"\nLIMIT 10;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,8 +23,8 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "GetGenders",
-    "pageId": "Page1",
+    "name": "FetchUsers",
+    "pageId": "Users from same Country",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
